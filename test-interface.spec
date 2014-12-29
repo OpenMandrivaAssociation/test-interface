@@ -1,11 +1,12 @@
+%{?_javapackages_macros:%_javapackages_macros}
 %global test_interface_version 1.0
 %global build_with_sbt 0
 
 Name:           test-interface
 Version:        %{test_interface_version}
-Release:        3%{?dist}
+Release:        3.1
 Summary:        Uniform interface to Scala and Java test frameworks
-
+Group:		Development/Java
 License:        BSD
 URL:            https://github.com/sbt/test-interface
 Source0:        https://github.com/sbt/test-interface/archive/v%{test_interface_version}.tar.gz
@@ -101,7 +102,7 @@ cp -rp target/api/* %{buildroot}/%{_javadocdir}/%{name}
 %files
 %{_javadir}/%{name}.jar
 %{_mavenpomdir}/JPP-%{name}.pom
-%{_mavendepmapfragdir}/%{name}
+%{_datadir}/maven-metadata/*
 
 %doc LICENSE README
 
