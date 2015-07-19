@@ -4,7 +4,7 @@
 
 Name:           test-interface
 Version:        %{test_interface_version}
-Release:        3.1
+Release:        3.2
 Summary:        Uniform interface to Scala and Java test frameworks
 Group:		Development/Java
 License:        BSD
